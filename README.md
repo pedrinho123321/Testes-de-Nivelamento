@@ -21,4 +21,4 @@ Estou à disposição para quaisquer dúvidas ou esclarecimentos adicionais. Agr
 ---
 
 **Pedro Vilas Boas Vasconcelos**  
-[LinkedIn](https://www.linkedin.com/in/pedro-vilas-boas-vasconcelos/) | [GitHub](https://github.com/seu-usuario)
+[LinkedIn](https://www.linkedin.com/in/pedro-vilas-boas-vasconcelos/) 
