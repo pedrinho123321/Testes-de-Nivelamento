@@ -19,7 +19,7 @@ A solução foi implementada em **Python** e usa a biblioteca `HTMLParser` para 
 
 ---
 
-## Como Executar o Código
+## 📌 Execução
 
 Para executar o código e realizar o processo de **Web Scraping**, siga os passos abaixo:
 
