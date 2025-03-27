@@ -50,7 +50,7 @@ def replace_abbreviations(df):
         'AMB/HOS': 'Ambulatorial/Hospitalar'
     }
     
-    # Replace values in the AMB column 
+    # Replace values in the AMB column
     if 'AMB' in df.columns:
         df['AMB'] = df['AMB'].replace(amb_mapping)
     
@@ -82,8 +82,8 @@ def main():
         df.to_csv(csv_path, index=False, encoding='utf-8')
         print(f"Saved data to {csv_path}")
         
-        # Create ZIP file
-        zip_path = 'downloads/Teste_Vasco.zip'
+        # Create ZIP file with updated name
+        zip_path = 'downloads/Teste_(Pedro_Vasconcelos).zip'
         with zipfile.ZipFile(zip_path, 'w') as zipf:
             zipf.write(csv_path, os.path.basename(csv_path))
         print(f"Created zip file: {zip_path}")
