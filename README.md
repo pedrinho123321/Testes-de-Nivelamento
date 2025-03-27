@@ -1,18 +1,24 @@
 # Testes-de-Nivelamento
 
-Olá! Meu nome é Pedro Vilas Boas Vasconcelos e estou me candidatando à vaga de estágio na IntuitiveCare. Neste repositório, você encontrará a resolução dos exercícios propostos na prova de seleção.
+# Pedro Vilas Boas Vasconcelos - Candidatura Estágio - IntuitiveCare
 
-Separei as resoluções em diferentes branches para facilitar a organização e visualização do meu trabalho. Cada branch contém a solução de um exercício específico.
+Olá, meu nome é **Pedro Vilas Boas Vasconcelos** e estou me candidatando à vaga de estágio na **IntuitiveCare**. Este repositório contém a resolução dos exercícios propostos na prova de seleção.
 
-Estrutura das Branches:
-main: Este README e informações gerais sobre o repositório.
+A fim de organizar melhor o conteúdo e facilitar a visualização das soluções, separei cada exercício em branches específicas. Abaixo, você encontrará a estrutura das branches que contém as resoluções:
 
-TESTE_DE_WEB_SCRAPING: Resolução da questão 1 - Web Scraping.
+## Estrutura das Branches
 
-TESTE_DE_TRANSFORMAÇÃO_DE_DADOS: Resolução da questão 2 - Transformação de Dados.
+- **main**: Contém este README e informações gerais sobre o repositório.
+- **TESTE_DE_WEB_SCRAPING**: Resolução da questão 1 - Web Scraping.
+- **TESTE_DE_TRANSFORMAÇÃO_DE_DADOS**: Resolução da questão 2 - Transformação de Dados.
+- **TESTE_DE_BANCO_DE_DADOS**: Resolução da questão 3 - Banco de Dados.
+- **TESTE_DE_API**: Resolução da questão 4 - API.
 
-TESTE_DE_BANCO_DE_DADOS: Resolução da questão 3 - Banco de Dados.
+## Contato
 
-TESTE_DE_API: Resolução da questão 4 - API.
+Estou à disposição para quaisquer dúvidas ou esclarecimentos adicionais. Agradeço pela oportunidade de participar deste processo seletivo!
 
-Fico à disposição para quaisquer dúvidas ou esclarecimentos adicionais!
+---
+
+**Pedro Vilas Boas Vasconcelos**  
+[LinkedIn](https://www.linkedin.com/in/pedro-vilas-boas-vasconcelos/) | [GitHub](https://github.com/seu-usuario)
