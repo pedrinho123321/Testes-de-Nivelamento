@@ -16,3 +16,22 @@ A solução foi implementada em **Python** e usa a biblioteca `HTMLParser` para 
 2. **Identificação dos Links de PDF**: O código analisa a página HTML e extrai todos os links que levam a arquivos PDF.
 3. **Download dos Arquivos PDF**: O código faz o download dos arquivos que contenham "Anexo I" e "Anexo II" no nome.
 4. **Compactação dos Arquivos**: Os PDFs baixados são compactados em um único arquivo ZIP para facilitar o envio e armazenamento.
+
+---
+
+## Como Executar o Código
+
+Para executar o código e realizar o processo de **Web Scraping**, siga os passos abaixo:
+
+### 1. Instalar Dependências
+
+O código requer as bibliotecas **`urllib`** e **`HTMLParser`** para fazer o download dos PDFs e realizar o scraping do conteúdo da página. Você pode instalar as dependências necessárias
+
+### 2. Executar o Script
+
+Após instalar as dependências, basta rodar o script. O programa irá:
+
+- **Acessar o site da ANS**.
+- **Identificar os links** para os arquivos PDF dos Anexos I e II.
+- **Realizar o download** desses arquivos.
+- **Compactar os arquivos baixados** em um único arquivo ZIP.
