@@ -1,7 +1,5 @@
 # Testes-de-Nivelamento
 
-# Pedro Vilas Boas Vasconcelos - Candidatura Estágio - IntuitiveCare
-
 Olá, meu nome é **Pedro Vilas Boas Vasconcelos** e estou me candidatando à vaga de estágio na **IntuitiveCare**. Este repositório contém a resolução dos exercícios propostos na prova de seleção.
 
 A fim de organizar melhor o conteúdo e facilitar a visualização das soluções, separei cada exercício em branches específicas. Abaixo, você encontrará a estrutura das branches que contém as resoluções:
