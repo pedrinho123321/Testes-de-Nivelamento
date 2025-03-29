@@ -1,0 +1,13 @@
+{
+  "name": "ans-analysis",
+  "private": true,
+  "scripts": {
+    "download": "python download_ans_data.py",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "pg": "^8.11.3",
+    "dotenv": "^16.4.1"
+  }
+}
