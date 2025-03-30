@@ -42,7 +42,6 @@ export default {
   },
   methods: {
     async searchOperadoras() {
-      // Debounce para evitar muitas requisições
       clearTimeout(this.timeout);
       this.timeout = setTimeout(async () => {
         if (this.searchQuery.length >= 2) {
