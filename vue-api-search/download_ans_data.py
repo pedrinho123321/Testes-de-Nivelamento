@@ -26,11 +26,9 @@ def get_ans_files():
     return files_to_download
 
 def main():
-    # Cria diretório de dados
     if not os.path.exists('data'):
         os.makedirs('data')
     
-    # Baixa arquivos de demonstracoes contabeis
     print("Baixando arquivos de demonstracoes contabeis...")
     files = get_ans_files()
     downloaded_files = []
@@ -42,7 +40,6 @@ def main():
         except requests.exceptions.RequestException as e:
             print(f"Erro ao baixar {file_url}: {e}")
     
-    # Baixa CSV de operadoras ativas (URL corrigida)
     print("\nBaixando CSV de operadoras ativas...")
     operadoras_url = "https://dadosabertos.ans.gov.br/FTP/PDA/operadoras_de_plano_de_saude_ativas/Relatorio_cadop.csv"
     operadoras_file = os.path.join('data', 'operadoras_ativas.csv')
