@@ -21,7 +21,6 @@ class ANSParser(HTMLParser):
                 if attr[0] == 'href':
                     href = attr[1]
                     if '.pdf' in href.lower():
-                        # Ensure full URL
                         if not href.startswith('http'):
                             href = 'https://www.gov.br' + href
                         print(f"Found PDF link: {href}")
@@ -57,17 +56,14 @@ def create_zip(pdf_files, zip_name):
 def main():
     print("Starting web scraper...")
     
-    # Create directory for downloads if it doesn't exist
     if not os.path.exists('downloads'):
         os.makedirs('downloads')
         print("Created downloads directory")
 
-    # URL of the target page
     url = "https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos"
     print(f"Accessing URL: {url}")
     
     try:
-        # Get the page content
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
@@ -76,24 +72,19 @@ def main():
         html_content = response.read().decode('utf-8')
         print("Successfully retrieved page content")
         
-        # Parse HTML content
         parser = ANSParser()
         parser.feed(html_content)
         print(f"Found {len(parser.pdf_links)} PDF links in total")
         
-        # Download PDFs containing "Anexo I" and "Anexo II"
         pdf_files = []
         for href in parser.pdf_links:
-            # Check for the specific Anexo PDFs
             if 'Anexo_I_Rol_2021RN' in href or 'Anexo_II_DUT_2021_RN' in href:
                 print(f"Found relevant PDF: {href}")
-                # Extract filename from URL
                 filename = href.split('/')[-1]
                 save_path = os.path.join('downloads', filename)
                 if download_pdf(href, save_path):
                     pdf_files.append(save_path)
         
-        # Create ZIP file with downloaded PDFs
         if pdf_files:
             create_zip(pdf_files, 'downloads/anexos.zip')
             print("\nProcess completed successfully!")
