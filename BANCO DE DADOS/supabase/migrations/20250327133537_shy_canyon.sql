@@ -1,4 +1,3 @@
--- Criação da tabela de operadoras
 CREATE TABLE IF NOT EXISTS operadoras (
     registro_ans VARCHAR(20) PRIMARY KEY,
     cnpj VARCHAR(14),
@@ -21,7 +20,6 @@ CREATE TABLE IF NOT EXISTS operadoras (
     data_registro_ans DATE
 );
 
--- Criação da tabela de demonstrações contábeis
 CREATE TABLE IF NOT EXISTS demonstracoes_contabeis (
     registro_ans VARCHAR(20),
     data_trimestre DATE,
@@ -32,6 +30,5 @@ CREATE TABLE IF NOT EXISTS demonstracoes_contabeis (
     FOREIGN KEY (registro_ans) REFERENCES operadoras(registro_ans)
 );
 
--- Índices para melhor performance
 CREATE INDEX IF NOT EXISTS idx_demonstracoes_data ON demonstracoes_contabeis(data_trimestre);
 CREATE INDEX IF NOT EXISTS idx_demonstracoes_conta ON demonstracoes_contabeis(codigo_conta);
