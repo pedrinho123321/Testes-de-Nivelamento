@@ -10,7 +10,6 @@ async function connectToDatabase() {
     await client.connect();
     console.log("Connected to database successfully");
 
-    // Execute queries
     const lastQuarterQuery = `
       WITH last_quarter AS (
         SELECT MAX(data_trimestre) as max_date
