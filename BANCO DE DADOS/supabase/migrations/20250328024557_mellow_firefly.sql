@@ -1,4 +1,3 @@
--- Top 10 operadoras com maiores despesas no último trimestre
 WITH last_quarter AS (
     SELECT MAX(data_trimestre) as max_date
     FROM demonstracoes_contabeis
@@ -9,11 +8,10 @@ SELECT
 FROM demonstracoes_contabeis dc
 JOIN operadoras o ON dc.registro_ans = o.registro_ans
 JOIN last_quarter lq ON dc.data_trimestre = lq.max_date
-WHERE dc.codigo_conta = '411X1' -- Código para EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS
+WHERE dc.codigo_conta = '411X1' 
 ORDER BY dc.valor_conta DESC
 LIMIT 10;
 
--- Top 10 operadoras com maiores despesas no último ano
 WITH last_year AS (
     SELECT 
         registro_ans,
