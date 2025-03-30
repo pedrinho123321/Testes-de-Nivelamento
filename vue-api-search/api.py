@@ -5,7 +5,6 @@ import uvicorn
 
 app = FastAPI()
 
-# Configurar CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -14,7 +13,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Carregar dados das operadoras
 def load_operadoras():
     try:
         return pd.read_csv('data/operadoras_ativas.csv', sep=';', encoding='utf-8')
@@ -29,7 +27,6 @@ async def buscar_operadoras(q: str = Query(None, min_length=2)):
     
     df = load_operadoras()
     
-    # Realizar busca em várias colunas
     mask = df['razao_social'].str.contains(q, case=False, na=False) | \
            df['nome_fantasia'].str.contains(q, case=False, na=False) | \
            df['registro_ans'].str.contains(q, case=False, na=False)
